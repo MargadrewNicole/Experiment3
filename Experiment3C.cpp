@@ -10,6 +10,8 @@ int main()
 
     char arr[num];
 
+    if (num > 0)
+    {
     cout << "Please enter your desired characters: ";
 
     for (int i = 0; i < num; i++)
@@ -38,6 +40,10 @@ int main()
     }
 
     cout << "\n\nThe array has " << num << " characters.";
+    }
+    else
+        cout << "Invalid";
+
     getch();
     return 0;
 }
